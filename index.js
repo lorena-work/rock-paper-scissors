@@ -75,3 +75,16 @@ game();
 else{
     console.log(`You lost the game!  You won ${playerScore} matches out of five!`)
 }*/
+
+const buttons = document.querySelector("#buttons");
+const btnRock = document.createElement("button");
+const btnPaper = document.createElement("button");
+const btnScissors = document.createElement("button");
+
+buttons.appendChild(btnRock);
+buttons.appendChild(btnPaper);
+buttons.appendChild(btnScissors);
+
+btnRock.addEventListener("click", () => {
+    
+});
