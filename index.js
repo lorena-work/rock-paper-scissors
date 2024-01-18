@@ -48,8 +48,8 @@ function playRound(playerSelection, computerSelection){
         return `I played ${computerSelection} and you played ${playerSelectionCapped}. ${computerSelection} beats ${playerSelectionCapped}. You lose!`;
     }
 }
-
-function game(){
+//REVERT LATER
+/*function game(){
     for(let i=0; i<5;i++){
         let playerSelection = prompt("Enter rock, paper, or scissors to start the match!")
         let computerSelection = getComputerChoice();
@@ -57,12 +57,21 @@ function game(){
         console.log(`This ends round ${i+1}.`);
     }
 }
+*/
+function game(){
+    
+    let playerSelection = prompt("Enter rock, paper, or scissors to start the match!")
+    let computerSelection = getComputerChoice();
+    console.log(playRound(playerSelection, computerSelection));
+    console.log(`This ends the match.`);
+    //REVERT LATER 'This end the round.' to 'This ends the match.'
+}
 
 game();
-
-if(playerScore > computerScore){
+//REVERT LATER
+/*if(playerScore > computerScore){
     console.log(`You won the game! You won ${playerScore} matches out of five!`)
 }
 else{
     console.log(`You lost the game!  You won ${playerScore} matches out of five!`)
-}
+}*/
